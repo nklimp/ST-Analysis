@@ -1,0 +1,14 @@
+
+#Install STUtility
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install()
+
+BiocManager::install("SingleCellExperiment")
+BiocManager::install("multtest")
+
+install.packages("devtools")
+devtools::install_hithub("linxihui/NNLM")
+
+devtools::install_github(
+    "jbergenstrahle/STUtility"\)
