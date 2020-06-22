@@ -1,0 +1,9 @@
+library(STutility)
+
+#upload files and filter dataset. For OR capture, all values are set to minimum 1
+
+se <- InputFromTable(infotable = infoTable, 
+                      min.gene.count = 1, 
+                      min.gene.spots = 1,
+                      min.spot.count = 1,
+                      platform =  "Visium")
